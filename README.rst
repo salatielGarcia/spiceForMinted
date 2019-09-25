@@ -40,17 +40,17 @@ The method to add the lexer to the pygments library is described `here <https://
 
    ``python setup.py develop``
 
-   If your system required admin priviledges change the command accordingly.
+   If your system required admin privileges change the command accordingly.
 
-At this point the lexer should work. To verify that the process was successfull you can try a couple of things.
+At this point the lexer should work. To verify that the process was successful you can try a couple of things.
 
-A. Navigate to the ``site-packages`` folder of your python install. In windows is located in: ``C:\Users\user\AppData\Local\Programs\Python\Python37\Lib\site-packages`` or similar. There you should see 2 addtional files ``spice.egg-link`` and ``easy-install.pth`` the ``egg-link`` file should contain the path to your ``setup.py`` directory.
+A. Navigate to the ``site-packages`` folder of your python install. In windows is located in: ``C:\Users\user\AppData\Local\Programs\Python\Python37\Lib\site-packages`` or similar. There you should see 2 additional files ``spice.egg-link`` and ``easy-install.pth`` the ``egg-link`` file should contain the path to your ``setup.py`` directory.
 
 B. In a terminal type:
 
    ``pygmentize -L lexers``
 
-   to print the available lexers for pygments, you should find the SPICE lexer listed there. If so, it means that your lexer is ready to work in your latex complilation. A test document for your lexer can be:
+   to print the available lexers for pygments, you should find the SPICE lexer listed there. If so, it means that your lexer is ready to work in your latex compilation. A test document for your lexer can be:
 
    .. code:: latex
 
@@ -87,3 +87,5 @@ B. In a terminal type:
         \label{net:asd}
         \end{listing}
         \end{document}
+
+After this everything should work properly.
