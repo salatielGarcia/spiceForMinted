@@ -1,0 +1,4 @@
+
+  [pygments.lexers]
+  spice = spice.lexer:SpiceLexer
+  
